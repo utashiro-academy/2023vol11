@@ -10,10 +10,14 @@
     <!-- Josh's Custom CSS Reset -最近の仕様に対応したCSSリセット -->
     <!-- デフォルトのHTMLが持つスタイルをリセットする -->
     <link rel="stylesheet" href="reset.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         body {
             background: #efefef;
+            font-family: 'DotGothic16', sans-serif;
         }
 
         .menu {
@@ -94,23 +98,23 @@
     <!--　表示させるための本文  -->
     <main>
         <div class="wrap">
-            <h1 class="h-large">テストタイトル</h1>
+            <h1 class="h-large animate__animated animate__backInRight">テストタイトル</h1>
 
             <!-- 画像は横幅1600px 200kb以下に圧縮 -->
             <div class="card-wrap">
-                <div class="card">
+                <div class="card animate__animated animate__shakeX">
                     <img src="photo.jpg" alt="">
                     <div class="txt">
                         <p>写真の解説文：タブレットの写真</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__wobble">
                     <img src="photo.jpg" alt="">
                     <div class="txt">
                         <p>写真の解説文：タブレットの写真</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__backInDown">
                     <img src="photo.jpg" alt="">
                     <div class="txt">
                         <p>写真の解説文：タブレットの写真</p>
@@ -133,6 +137,7 @@
             </div>
         </div>
     </main>
+    <script async defer src="https://scripts.withcabin.com/hello.js"></script>
 </body>
 
 </html>
